@@ -11,10 +11,15 @@ class App extends Component {
   }
 
   componentDidMount() {
-   axios.get('https://brotha-nature-api.herokuapp.com/api/v1/posts')
-   .then(response => {
-     this.setState({ posts: response.data });
-   });
+    setInterval(() => {
+      axios.get('https://brotha-nature-api.herokuapp.com/api/v1/posts')
+      .then(response => {
+        this.setState({ posts: response.data });
+      })
+      .catch(function(error){
+        console.log(error);
+      })
+    }, 1000);
   }
 
   render() {
