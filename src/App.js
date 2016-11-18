@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-   axios.get('http://brotha-nature-api.herokuapp.com/api/v1/posts')
+   axios.get('https://brotha-nature-api.herokuapp.com/api/v1/posts')
    .then(response => {
      this.setState({ posts: response.data });
    });
