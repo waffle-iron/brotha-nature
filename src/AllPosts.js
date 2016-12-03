@@ -5,6 +5,7 @@ class AllPosts extends Component {
     var posts = this.props.posts.map((post) => {
       return(
        <div key={post.id}>
+         <img src={post.image.url} role="presentation" style={{width: 150, height: 150}} />
         <h3>{ post.title }</h3>
         <p>{ post.body }</p>
        </div>
