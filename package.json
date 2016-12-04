@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "react-bootstrap": "^0.30.7",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
