@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import AllPosts from './AllPosts';
+import Banner from './Banner';
 import axios from 'axios';
 
 class App extends Component {
@@ -25,6 +25,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Banner />
         <AllPosts posts={this.state.posts} />
       </div>
     );

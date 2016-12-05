@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import Post from './Post'
+import Post from './Post';
+import './AllPosts.css';
 
 class AllPosts extends Component {
   render(){
-    const postStyle = {
-      textAlign: "center"
+
+    let postStyle = {
+      textAlign: "center",
+      paddingTop: 50,
+      position: "relative"
     }
+
     var posts = this.props.posts.map((post) => {
       return(
        <div key={post.id}>
@@ -14,8 +19,7 @@ class AllPosts extends Component {
       )
     });
     return(
-      <div style={ postStyle }>
-        <h1>Brotha Nature</h1>
+      <div className='allPosts' style={ postStyle }>
         { posts }
       </div>
     )
