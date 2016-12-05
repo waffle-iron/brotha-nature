@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Post from './Post'
+import Post from './Post';
 
 class AllPosts extends Component {
   render(){
@@ -15,7 +15,6 @@ class AllPosts extends Component {
     });
     return(
       <div style={ postStyle }>
-        <h1>Brotha Nature</h1>
         { posts }
       </div>
     )
