@@ -16,7 +16,7 @@ class AllPosts extends Component {
       textAlign: "center",
       paddingTop: 50,
       position: "relative",
-      width: 200
+      width: 170
     }
 
     var posts = this.props.posts.map((post) => {
@@ -44,7 +44,7 @@ class AllPosts extends Component {
           <div className='allPosts' style={ {textAlign: "center",
                                             paddingTop: 50,
                                             position: "relative",
-                                            width: 240} }>
+                                            width: 200} }>
             { posts }
           </div>
         </MediaQuery>
@@ -53,7 +53,7 @@ class AllPosts extends Component {
           <div className='allPosts' style={ {textAlign: "center",
                                             paddingTop: 50,
                                             position: "relative",
-                                            width: 260} }>
+                                            width: 220} }>
             { posts }
           </div>
         </MediaQuery>

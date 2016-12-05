@@ -12,7 +12,8 @@ class Post extends Component {
     }
 
     let postMobileStyle = {
-      width: 200,
+      width: 170,
+      marginRight: 10,
       position: "relative"
     }
 
@@ -32,7 +33,7 @@ class Post extends Component {
           <div className='post' style={postDesktopStyle}>
             <img src={this.props.post.image.url}
               role="presentation"
-              style={{width: postDesktopStyle.width - 50, paddingTop: 20, size: "contain"}} />
+              style={{width: postDesktopStyle.width - 40, paddingTop: 20, size: "contain"}} />
 
             <h3 style={{color: "#b8bab8"}}>{ this.props.post.title }</h3>
             <hr></hr>
@@ -53,7 +54,7 @@ class Post extends Component {
         </MediaQuery>
 
         <MediaQuery maxDeviceWidth={375} minDeviceWidth={321}>
-          <div className='mobile-post' style={{width: 240, position: "relative"}}>
+          <div className='mobile-post' style={{width: 200, position: "relative"}}>
             <img src={this.props.post.image.url}
               role="presentation"
               style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />
@@ -65,7 +66,7 @@ class Post extends Component {
         </MediaQuery>
 
         <MediaQuery maxDeviceWidth={414} minDeviceWidth={376}>
-          <div className='mobile-post' style={{width: 260, position: "relative"}}>
+          <div className='mobile-post' style={{width: 220, position: "relative"}}>
             <img src={this.props.post.image.url}
               role="presentation"
               style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />
