@@ -22,7 +22,7 @@ class Banner extends Component {
     let bannerMobileStyle = {
       backgroundImage: 'url(' + bannerImage + ')',
       height: 250,
-      width: 170,
+      width: 340,
       backgroundSize: "cover"
     }
     return (
@@ -43,7 +43,7 @@ class Banner extends Component {
         <MediaQuery maxDeviceWidth={375} minDeviceWidth={321}>
           <div style={{backgroundImage: 'url(' + bannerImage + ')',
                        height: 250,
-                       width: 200,
+                       width: 400,
                        backgroundSize: "cover"}}>
 
             <h1 style={headerStyle}>BrothaNature</h1>
@@ -53,7 +53,7 @@ class Banner extends Component {
         <MediaQuery maxDeviceWidth={414} minDeviceWidth={376}>
           <div style={{backgroundImage: 'url(' + bannerImage + ')',
                        height: 250,
-                       width: 220,
+                       width: 440,
                        backgroundSize: "cover"}}>
 
             <h1 style={headerStyle}>BrothaNature</h1>
