@@ -1,0 +1,16 @@
+.post {
+  z-index: 1;
+}
+
+.post:before {
+  content: "";
+  background: url(../images/plant_row.jpg);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-position: bottom;
+  z-index: -1;
+}

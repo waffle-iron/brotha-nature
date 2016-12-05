@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Post from './Post';
+import './AllPosts.css';
 
 class AllPosts extends Component {
   render(){
-    let mainImage = require('../images/veggies.jpg')
+    // let mainImage = require('../images/veggies.jpg')
 
     let postStyle = {
       textAlign: "center",
-      backgroundImage: 'url(' + mainImage + ')',
       paddingTop: 50,
-      resizeMode: "cover"
+      position: "relative"
     }
 
     var posts = this.props.posts.map((post) => {
@@ -20,7 +20,7 @@ class AllPosts extends Component {
       )
     });
     return(
-      <div style={ postStyle }>
+      <div className='allPosts' style={ postStyle }>
         { posts }
       </div>
     )
