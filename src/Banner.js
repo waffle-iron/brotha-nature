@@ -29,7 +29,9 @@ class Banner extends Component {
       <div>
         <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
           <div style={bannerDesktopStyle}>
-            <h1 style={headerStyle}>BrothaNature</h1>
+            <h1 style={{textAlign: "center",
+                       paddingTop: 100,
+                       color: "#63b074"}}>BrothaNature</h1>
           </div>
         </MediaQuery>
 
