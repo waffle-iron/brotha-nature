@@ -39,10 +39,20 @@ class Banner extends Component {
           </div>
         </MediaQuery>
 
-        <MediaQuery maxDeviceWidth={414} minDeviceWidth={321}>
+        <MediaQuery maxDeviceWidth={375} minDeviceWidth={321}>
           <div style={{backgroundImage: 'url(' + bannerImage + ')',
                        height: 250,
                        width: 240,
+                       backgroundSize: "cover"}}>
+
+            <h1 style={headerStyle}>BrothaNature</h1>
+          </div>
+        </MediaQuery>
+
+        <MediaQuery maxDeviceWidth={414} minDeviceWidth={376}>
+          <div style={{backgroundImage: 'url(' + bannerImage + ')',
+                       height: 250,
+                       width: 260,
                        backgroundSize: "cover"}}>
 
             <h1 style={headerStyle}>BrothaNature</h1>

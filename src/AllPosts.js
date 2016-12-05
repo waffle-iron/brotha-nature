@@ -40,11 +40,20 @@ class AllPosts extends Component {
           </div>
         </MediaQuery>
 
-        <MediaQuery maxDeviceWidth={414} minDeviceWidth={321}>
+        <MediaQuery maxDeviceWidth={375} minDeviceWidth={321}>
           <div className='allPosts' style={ {textAlign: "center",
                                             paddingTop: 50,
                                             position: "relative",
                                             width: 240} }>
+            { posts }
+          </div>
+        </MediaQuery>
+
+        <MediaQuery maxDeviceWidth={414} minDeviceWidth={376}>
+          <div className='allPosts' style={ {textAlign: "center",
+                                            paddingTop: 50,
+                                            position: "relative",
+                                            width: 260} }>
             { posts }
           </div>
         </MediaQuery>
