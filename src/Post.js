@@ -18,13 +18,15 @@ class Post extends Component {
     }
 
     let pStyle = {
-      marginLeft: 15,
-      marginRight: 15,
+      marginLeft: 10,
+      marginRight: 10,
+      paddingBottom: 50,
+      paddingRight: 20,
+      paddingLeft: 20,
       fontFamily: "sans-sarif",
       fontSize: 20,
       fontWeight: "bold",
-      color: "#b8bab8",
-      paddingBottom: 50
+      color: "#b8bab8"
     }
 
     return (
