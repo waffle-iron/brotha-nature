@@ -4,7 +4,6 @@ import './AllPosts.css';
 
 class AllPosts extends Component {
   render(){
-    // let mainImage = require('../images/veggies.jpg')
 
     let postStyle = {
       textAlign: "center",
