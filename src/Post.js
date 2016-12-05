@@ -40,8 +40,8 @@ class Post extends Component {
           </div>
         </MediaQuery>
 
-        <MediaQuery maxDeviceWidth={320}>
-          <div className='mobile-post' style={postMobileStyle}>
+        <MediaQuery maxDeviceWidth={375}>
+          <div className='mobile-post' style={{width: 240, position: "relative"}}>
             <img src={this.props.post.image.url}
               role="presentation"
               style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />

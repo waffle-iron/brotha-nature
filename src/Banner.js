@@ -38,9 +38,13 @@ class Banner extends Component {
           </div>
         </MediaQuery>
 
-        <MediaQuery maxDeviceWidth={320}>
-          <div style={bannerMobileStyle}>
-            <h1 style={headerMobileStyle}>BrothaNature</h1>
+        <MediaQuery maxDeviceWidth={375}>
+          <div style={{backgroundImage: 'url(' + bannerImage + ')',
+                       height: 250,
+                       width: 240,
+                       backgroundSize: "cover"}}>
+
+            <h1 style={{textAlign: "center", paddingTop: 100, color: "#63b074"}}>BrothaNature</h1>
           </div>
         </MediaQuery>
       </div>
