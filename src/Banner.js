@@ -6,13 +6,7 @@ class Banner extends Component {
   render(){
     let bannerImage = require('../images/long_leaves.png')
 
-    let headerDesktopStyle = {
-      textAlign: "center",
-      paddingTop: 100,
-      color: "#63b074"
-    }
-
-    let headerMobileStyle = {
+    let headerStyle = {
       textAlign: "center",
       paddingTop: 100,
       color: "#63b074"
@@ -34,17 +28,24 @@ class Banner extends Component {
       <div>
         <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
           <div style={bannerDesktopStyle}>
-            <h1 style={headerDesktopStyle}>BrothaNature</h1>
+            <h1 style={headerStyle}>BrothaNature</h1>
           </div>
         </MediaQuery>
 
-        <MediaQuery maxDeviceWidth={375}>
+        <MediaQuery maxDeviceWidth={320}>
+          <div style={bannerMobileStyle}>
+
+            <h1 style={headerStyle}>BrothaNature</h1>
+          </div>
+        </MediaQuery>
+
+        <MediaQuery maxDeviceWidth={414} minDeviceWidth={321}>
           <div style={{backgroundImage: 'url(' + bannerImage + ')',
                        height: 250,
                        width: 240,
                        backgroundSize: "cover"}}>
 
-            <h1 style={{textAlign: "center", paddingTop: 100, color: "#63b074"}}>BrothaNature</h1>
+            <h1 style={headerStyle}>BrothaNature</h1>
           </div>
         </MediaQuery>
       </div>
