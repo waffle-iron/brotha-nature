@@ -5,14 +5,14 @@ class Banner extends Component {
     let bannerImage = require('../images/long_leaves.png')
     let headerStyle = {
       textAlign: "center",
-      paddingTop: 50,
+      paddingTop: 100,
       color: "#63b074"
     }
 
     let bannerStyle = {
       backgroundImage: 'url(' + bannerImage + ')',
-      height: 150,
-      marginBottom: 30
+      height: 250,
+      backgroundSize: "cover"
     }
     return (
       <div style={bannerStyle}>
