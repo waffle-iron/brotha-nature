@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AllPosts from './AllPosts';
+import './App.css'
 import Banner from './Banner';
 import axios from 'axios';
 

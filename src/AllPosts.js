@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import Post from './Post';
 import './AllPosts.css';
+let MediaQuery = require('react-responsive');
 
 class AllPosts extends Component {
   render(){
 
-    let postStyle = {
+    let postsDesktopStyle = {
       textAlign: "center",
       paddingTop: 50,
       position: "relative"
+    }
+
+    let postsMobileStyle = {
+      textAlign: "center",
+      paddingTop: 50,
+      position: "relative",
+      width: 200
     }
 
     var posts = this.props.posts.map((post) => {
@@ -19,8 +27,18 @@ class AllPosts extends Component {
       )
     });
     return(
-      <div className='allPosts' style={ postStyle }>
-        { posts }
+      <div>
+        <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
+          <div className='allPosts' style={ postsDesktopStyle }>
+            { posts }
+          </div>
+        </MediaQuery>
+
+        <MediaQuery maxDeviceWidth={320}>
+          <div className='allPosts' style={ postsMobileStyle }>
+            { posts }
+          </div>
+        </MediaQuery>
       </div>
     )
   }

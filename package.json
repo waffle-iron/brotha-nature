@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-bootstrap": "^0.30.7",
-    "react-scripts": "0.7.0",
-    "react-smartbanner": "^2.2.0"
+    "react-responsive": "^1.2.5",
+    "react-scripts": "0.7.0"
   },
   "dependencies": {
     "axios": "^0.15.2",
