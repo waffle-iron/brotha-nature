@@ -26,7 +26,7 @@ class Post extends Component {
       fontFamily: "sans-sarif",
       fontSize: 20,
       fontWeight: "bold",
-      color: "#b8bab8"
+      color: "black"
     }
 
     return (
@@ -37,7 +37,7 @@ class Post extends Component {
               role="presentation"
               style={{width: postDesktopStyle.width - 40, paddingTop: 20, size: "contain"}} />
 
-            <h3 style={{color: "#b8bab8"}}>{ this.props.post.title }</h3>
+            <h3 style={{color: "black"}}>{ this.props.post.title }</h3>
             <hr></hr>
             <p style={pStyle}>{ this.props.post.body }</p>
           </div>
@@ -49,7 +49,7 @@ class Post extends Component {
               role="presentation"
               style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />
 
-            <h3 style={{color: "#b8bab8"}}>{ this.props.post.title }</h3>
+            <h3 style={{color: "black"}}>{ this.props.post.title }</h3>
             <hr></hr>
             <p style={pStyle}>{ this.props.post.body }</p>
           </div>
@@ -61,7 +61,7 @@ class Post extends Component {
               role="presentation"
               style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />
 
-            <h3 style={{color: "#b8bab8"}}>{ this.props.post.title }</h3>
+            <h3 style={{color: "black"}}>{ this.props.post.title }</h3>
             <hr></hr>
             <p style={pStyle}>{ this.props.post.body }</p>
           </div>
@@ -73,7 +73,7 @@ class Post extends Component {
               role="presentation"
               style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />
 
-            <h3 style={{color: "#b8bab8"}}>{ this.props.post.title }</h3>
+            <h3 style={{color: "black"}}>{ this.props.post.title }</h3>
             <hr></hr>
             <p style={pStyle}>{ this.props.post.body }</p>
           </div>
