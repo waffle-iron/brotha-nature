@@ -10,16 +10,22 @@ export default class App extends Component {
     this.state = { posts: [] };
   }
 
-  componentDidMount() {
-    setInterval(() => {
-      axios.get('https://brotha-nature-api.herokuapp.com/api/v1/posts')
+  fetchPosts() {
+     axios.get('https://brotha-nature-api.herokuapp.com/api/v1/posts')
       .then(response => {
+        if (response.length === this.state.posts.length) return
         this.setState({ posts: response.data });
       })
       .catch(function(error){
         console.log(error);
       })
-    }, 1000);
+  }
+
+  componentDidMount() {
+    this.fetchPosts()
+    setInterval(() => {
+      this.fetchPosts()
+    }, 9000);
   }
 
   render() {
