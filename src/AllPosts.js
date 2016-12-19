@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Post from './Post';
-import './AllPosts.css';
+import '../css/AllPosts.css';
 let MediaQuery = require('react-responsive');
 
-class AllPosts extends Component {
+export default class AllPosts extends Component {
   render(){
 
     let postsDesktopStyle = {
@@ -61,5 +61,3 @@ class AllPosts extends Component {
     )
   }
 }
-
-export default AllPosts;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 let MediaQuery = require('react-responsive');
 
 
-class Banner extends Component {
+export default class Banner extends Component {
   render(){
     let bannerImage = require('../images/long_leaves.png')
 
@@ -65,5 +65,3 @@ class Banner extends Component {
     )
   }
 };
-
-export default Banner;
