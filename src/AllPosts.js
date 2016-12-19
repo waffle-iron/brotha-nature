@@ -19,7 +19,7 @@ export default class AllPosts extends Component {
       width: 340
     }
 
-    var posts = this.props.posts.map((post) => {
+    let posts = this.props.posts.map((post) => {
       return(
        <div key={post.id}>
          <Post post={post} />

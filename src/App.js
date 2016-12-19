@@ -10,6 +10,7 @@ export default class App extends Component {
     this.state = { posts: [] };
   }
 
+
   fetchPosts() {
      axios.get('https://brotha-nature-api.herokuapp.com/api/v1/posts')
       .then(response => {
