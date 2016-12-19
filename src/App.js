@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import AllPosts from './AllPosts';
-import './App.css'
 import Banner from './Banner';
 import axios from 'axios';
 
-class App extends Component {
+export default class App extends Component {
   constructor(props){
     super(props);
 
@@ -32,5 +31,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
