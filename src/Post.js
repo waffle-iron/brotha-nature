@@ -6,14 +6,14 @@ export default class Post extends Component {
   render() {
 
     let postDesktopStyle = {
-      marginLeft: 500,
+      margin: "auto",
       width: 300,
       position: "relative"
     }
 
     let postMobileStyle = {
       width: 340,
-      marginRight: 10,
+      margin: "auto",
       position: "relative"
     }
 
