@@ -16,7 +16,7 @@ export default class AllPosts extends Component {
       textAlign: "center",
       paddingTop: 50,
       position: "relative",
-      width: 340
+      backgroundSize: "auto"
     }
 
     let posts = this.props.posts.map((post) => {
