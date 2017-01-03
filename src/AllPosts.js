@@ -26,6 +26,7 @@ export default class AllPosts extends Component {
        </div>
       )
     });
+    
     return(
       <div>
         <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>

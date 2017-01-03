@@ -16,11 +16,11 @@ export default class App extends Component {
       .then(response => {
         if (response.data.length !== this.state.posts.length) {
           return this.setState({ posts: response.data });
-        }
+        };
       })
       .catch(function(error){
-        console.log(error);
-    })
+        console.log(error)
+    });
   }
 
   componentDidMount() {
