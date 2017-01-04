@@ -26,7 +26,7 @@ export default class Banner extends Component {
       backgroundSize: "cover"
     }
     return (
-      <div>
+      <div className='banner'>
         <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
           <div style={bannerDesktopStyle}>
             <h1 style={{textAlign: "center",

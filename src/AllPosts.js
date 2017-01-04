@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+  import React, { Component } from 'react';
 import Post from './Post';
 import '../css/AllPosts.css';
 let MediaQuery = require('react-responsive');
@@ -26,7 +26,7 @@ export default class AllPosts extends Component {
        </div>
       )
     });
-    
+
     return(
       <div>
         <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
