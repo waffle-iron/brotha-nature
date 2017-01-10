@@ -12,6 +12,7 @@ export default class Post extends Component {
     }
 
     let postMobileStyle = {
+      textAlign: 'center',
       width: 340,
       margin: "auto",
       position: "relative"
@@ -69,6 +70,18 @@ export default class Post extends Component {
 
         <MediaQuery maxDeviceWidth={414} minDeviceWidth={376}>
           <div className='mobile-post' style={{width: 440, position: "relative"}}>
+            <img src={this.props.post.image.url}
+              role="presentation"
+              style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />
+
+            <h3 style={{color: "black"}}>{ this.props.post.title }</h3>
+            <hr></hr>
+            <p style={pStyle}>{ this.props.post.body }</p>
+          </div>
+        </MediaQuery>
+
+        <MediaQuery maxDeviceWidth={1024} minDeviceWidth={568}>
+          <div className='mobile-post' style={{paddingLeft: 250, width: 500, position: "relative"}}>
             <img src={this.props.post.image.url}
               role="presentation"
               style={{width: postMobileStyle.width - 50, paddingTop: 20, size: "contain"}} />

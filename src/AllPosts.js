@@ -1,60 +1,70 @@
-  import React, { Component } from 'react';
-import Post from './Post';
-import '../css/AllPosts.css';
-let MediaQuery = require('react-responsive');
+import React, { Component } from 'react'
+import Post from './Post'
+import '../css/AllPosts.css'
+let MediaQuery = require('react-responsive')
 
 export default class AllPosts extends Component {
-  render(){
-
+  render () {
     let postsDesktopStyle = {
-      textAlign: "center",
+      textAlign: 'center',
       paddingTop: 50,
-      position: "relative"
+      position: 'relative',
+      margin: 'auto'
     }
 
     let postsMobileStyle = {
-      textAlign: "center",
+      textAlign: 'center',
       paddingTop: 50,
-      position: "relative",
-      backgroundSize: "auto"
+      position: 'relative',
+      margin: 'auto',
+      width: 350
     }
 
     let posts = this.props.posts.map((post) => {
-      return(
-       <div key={post.id}>
-         <Post post={post} />
-       </div>
+      return (
+        <div key={post.id}>
+          <Post post={post} />
+        </div>
       )
-    });
+    })
 
-    return(
+    return (
       <div>
         <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
-          <div className='allPosts' style={ postsDesktopStyle }>
+          <div className='allPosts' style={postsDesktopStyle}>
             { posts }
           </div>
         </MediaQuery>
 
         <MediaQuery maxDeviceWidth={320}>
-          <div className='allPosts' style={ postsMobileStyle }>
+          <div className='allPosts' style={postsMobileStyle}>
             { posts }
           </div>
         </MediaQuery>
 
         <MediaQuery maxDeviceWidth={375} minDeviceWidth={321}>
-          <div className='allPosts' style={ {textAlign: "center",
+          <div className='allPosts' style={{textAlign: 'center',
                                             paddingTop: 50,
-                                            position: "relative",
-                                            width: 400} }>
+                                            position: 'relative',
+                                            width: 400}}>
             { posts }
           </div>
         </MediaQuery>
 
         <MediaQuery maxDeviceWidth={414} minDeviceWidth={376}>
-          <div className='allPosts' style={ {textAlign: "center",
+          <div className='allPosts' style={{textAlign: 'center',
                                             paddingTop: 50,
-                                            position: "relative",
-                                            width: 440} }>
+                                            position: 'relative',
+                                            width: 440}}>
+            { posts }
+          </div>
+        </MediaQuery>
+
+        <MediaQuery maxDeviceWidth={1025} minDeviceWidth={567}>
+          <div className='allPosts' style={{textAlign: 'center',
+                                            paddingTop: 50,
+                                            position: 'relative',
+                                            width: 1000}}>
             { posts }
           </div>
         </MediaQuery>
