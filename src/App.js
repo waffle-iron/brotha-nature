@@ -33,6 +33,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <a href='/login'>login</a>
         <Banner />
         <AllPosts posts={this.state.posts} />
       </div>
