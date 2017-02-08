@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AllPosts from './AllPosts';
 import Banner from './Banner';
+import Fade from 'react-fade';
 import axios from 'axios';
 
 export default class App extends Component {
@@ -32,11 +33,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        <a href='/login'>login</a>
+      <Fade duration='3'>
         <Banner />
         <AllPosts posts={this.state.posts} />
-      </div>
+      </Fade>
     );
   }
 }

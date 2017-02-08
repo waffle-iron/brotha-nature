@@ -4,10 +4,12 @@ import '../css/AllPosts.css'
 let MediaQuery = require('react-responsive')
 
 export default class AllPosts extends Component {
+
   render () {
     let postsDesktopStyle = {
       textAlign: 'center',
       paddingTop: 50,
+      width: 1280,
       position: 'relative',
       margin: 'auto'
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/Post.css'
-let MediaQuery = require('react-responsive');
+import Fade from 'react-fade';
+import MediaQuery from 'react-responsive';
 
 export default class Post extends Component {
   render() {
@@ -32,17 +33,19 @@ export default class Post extends Component {
 
     return (
       <div>
-        <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
-          <div className='post' style={postDesktopStyle}>
-            <img src={this.props.post.image.url}
-              role="presentation"
-              style={{width: postDesktopStyle.width - 40, paddingTop: 20, size: "contain"}} />
+        <Fade duration='4.5'>
+          <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
+            <div className='post' style={postDesktopStyle}>
+              <img src={this.props.post.image.url}
+                role="presentation"
+                style={{width: postDesktopStyle.width - 40, paddingTop: 20, size: "contain"}} />
 
-            <h3 style={{color: "black"}}>{ this.props.post.title }</h3>
-            <hr></hr>
-            <p style={pStyle}>{ this.props.post.body }</p>
-          </div>
-        </MediaQuery>
+              <h3 style={{color: "black"}}>{ this.props.post.title }</h3>
+              <hr></hr>
+              <p style={pStyle}>{ this.props.post.body }</p>
+            </div>
+          </MediaQuery>
+        </Fade>
 
         <MediaQuery maxDeviceWidth={320}>
           <div className='mobile-post' style={postMobileStyle}>

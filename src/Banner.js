@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-let MediaQuery = require('react-responsive');
-
+import MediaQuery from 'react-responsive';
 
 export default class Banner extends Component {
+
   render(){
     let bannerImage = require('../images/long_leaves.png')
 
@@ -16,7 +16,10 @@ export default class Banner extends Component {
     let bannerDesktopStyle = {
       backgroundImage: 'url(' + bannerImage + ')',
       height: 250,
-      backgroundSize: "cover"
+      width: 1280,
+      textAlign: "center",
+      backgroundSize: "cover",
+      top: 0
     }
 
     let bannerMobileStyle = {
@@ -27,6 +30,7 @@ export default class Banner extends Component {
     }
     return (
       <div className='banner'>
+
         <MediaQuery minDeviceWidth={1280} values={{deviceWidth: 1280}}>
           <div style={bannerDesktopStyle}>
             <h1 style={{textAlign: "center",
